@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Meta Description Tag -->
+<meta name="description" content="Copier machine rentals give businesses an affordable way to get reliable copiers without high costs. Choose flexible plans, high-quality machines, and full support. Copier machine rentals help save money, improve productivity, and make office work smooth and easy">
+
+<!-- Canonical Tag -->
+<link rel="canonical" href="" />
+
+<!-- Keywords Tag (not important for SEO anymore, but some still use it) -->
+<meta name="keywords" content="copier machine,photocopier rental,rent copier,copier supplier,copier repair,color printer rental" />
+
+  <title>CPC Solution</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f6fc;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    nav a,
+    .dropdown-toggle {
+      color: #cdd9f0;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+    nav a:hover,
+    nav a:focus,
+    .dropdown-toggle:hover,
+    .dropdown-toggle:focus {
+      background-color: #3366cc;
+      color: #fff;
+      outline: none;
+    }
+    .dropdown-container {
+      position: relative;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      z-index: 20;
+      min-width: 180px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+    .dropdown-menu a {
+      color: #004080;
+      font-weight: bold;
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      font-size: 1rem;
+    }
+    .dropdown-menu a:hover {
+      background-color: #e6f0ff;
+    }
+    /* Mobile styles */
+    .menu-toggle {
+        display: none; /* Hidden by default on desktop */
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 5px;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .menu-toggle {
+        display: block; /* Show on mobile */
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+      nav.is-open {
+        display: flex; /* Show when active */
+      }
+      nav a, .dropdown-toggle, .dropdown-container {
+        width: 100%;
+        text-align: left;
+        box-sizing: border-box;
+      }
+      .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      .dropdown-menu a {
+        padding-left: 30px;
+        font-size: 1rem;
+      }
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+    main img {
+      width: 90%;
+      max-width: 900px;
+      height: auto;
+      max-height: 500px;
+      display: block;
+      margin: 0 auto 30px auto;
+      border-radius: 15px;
+      object-fit: contain;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+    article {
+      color: #222;
+      padding: 0 10px 20px 10px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+    }
+    article h2 {
+      color: #00509e;
+      font-weight: 700;
+      margin-bottom: 22px;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    section.buttons-section {
+      background: #e7f0fd;
+      margin: 50px auto 30px;
+      padding: 25px 30px;
+      border-radius: 10px;
+      max-width: 1100px;
+      box-shadow: inset 1px 1px 8px #a1c0ff;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px 20px;
+    }
+    .button-grid a {
+      background-color: #043b72;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      height: 44px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 80, 158, 0.4);
+    }
+    .button-grid a:hover,
+    .button-grid a:focus {
+      background-color: #003f75;
+      box-shadow: 0 6px 14px rgba(0, 55, 110, 0.6);
+      outline: none;
+    }
+    /* New styles for the location image container and image */
+    section.location-container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    section.location-container h3 {
+      color: #003366;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    section.location-container p {
+      font-size: 1.25rem;
+      color: #004080;
+      margin-bottom: 30px;
+    }
+    section.location-container img {
+      width: 100%;
+      max-width: 1100px;
+      height: auto;
+      border-radius: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>copier machine rentals</h1>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav id="main-nav">
+      <a href="https://www.copierpc.com.sg/">Home</a>
+      <a href="/about us.html">About Us</a>
+      <a href="https://www.copierpc.com.sg/blog/">Blog</a>
+      <a href="https://www.copierpc.com.sg/contact-us/">Contact</a>
+
+      <div class="dropdown-container">
+        <button class="dropdown-toggle" onclick="toggleDropdown('services-menu', this)">Services &#9662;</button>
+        <div id="services-menu" class="dropdown-menu">
+          <a href="https://www.copierpc.com.sg/copier-rental/">Copier Rental</a>
+          <a href="https://www.copierpc.com.sg/seo-package/">SEO</a>
+          <a href="https://www.copierpc.com.sg/monday-com-integration/">Work OS</a>
+          <a href="https://www.copierpc.com.sg/ai-chatbots/">AI Automation</a>
+        </div>
+      </div>
+
+      <div class="dropdown-container">
+        <button class="dropdown-toggle" onclick="toggleDropdown('product-menu', this)">Product &#9662;</button>
+        <div id="product-menu" class="dropdown-menu">
+          <a href="https://www.copierpc.com.sg/copier/">Copier</a>
+          <a href="https://www.copierpc.com.sg/it-products/">IT Products</a>
+          <a href="https://www.copierpc.com.sg/drivers/">Drivers</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <img src="sajid.jpg" alt="Office Copier" />
+    <article>
+      <h2>Why Choose Copier Rental with CPC Solution?</h2>
+      <p>In today’s competitive business landscape, <strong><a href="https://www.copierpc.com.sg/" target="_blank" rel="no follow">copier machine rentals</a></strong> offers a smart and flexible solution for companies of all sizes. Renting copiers through CPC Solution helps businesses avoid high upfront costs and provides access to the latest technology without the commitment of ownership. Our rental plans are designed to scale with your business needs, whether you require short-term support for a special project or long-term solutions for daily office work.</p>
+      <p>One of the greatest advantages of renting is the hassle-free maintenance included in our service. Our expert technicians ensure your copier machines receive prompt repairs and regular servicing, minimizing downtime and keeping your operations running smoothly. This all-inclusive support means your team can focus on core business activities without worrying about technical disruptions.</p>
+      <p>Copier rental also simplifies budgeting by converting large capital expenses into predictable monthly payments. This financial flexibility is ideal for startups aiming to conserve cash flow, and established companies seeking efficient cost management. Plus, rental payments are often tax-deductible, enhancing your financial benefits.</p>
+      <p>Whether you need high-quality FujiFilm, Canon, or Epson copiers, CPC Solution offers tailored recommendations and reliable support to ensure you get the right machine for your unique requirements. With our comprehensive copier rental services, your business stays productive, agile, and ahead of the technology curve.</p>
+    </article>
+
+    <section class="buttons-section">
+      <div class="button-grid">
+        <a href="https://www.copierpc.com.sg/copier/">FujiFilm Copier</a>
+        <a href="https://www.copierpc.com.sg/copier/">Canon Copier</a>
+        <a href="https://www.copierpc.com.sg/copier/">Epson Copier</a>
+        <a href="https://www.copierpc.com.sg/copier-rental/">Copier Rental Plans</a>
+        <a href="https://www.copierpc.com.sg/colour-copiers/">Colour Copier</a>
+        <a href="https://www.copierpc.com.sg/service-request/">Emergency Request</a>
+        <a href="https://www.copierpc.com.sg/buy-copier/">Buy Copier</a>
+        <a href="https://www.copierpc.com.sg/copier-disposal-service/">Copier Disposal</a>
+        <a href="https://www.copierpc.com.sg/copier-relocation-service/">Copier Relocation</a>
+      </div>
+    </section>
+  </main>
+
+  <section class="location-container">
+    <h3>Our Location</h3>
+   
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.12495206879!2d103.875895!3d1.316204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19d29f7363b7%3A0x2ad84e0f9f831390!2sCPC%20Solution%20Pte%20Ltd!5e0!3m2!1sen!2sus!4v1759046231612!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section style="max-width: 900px; margin: 40px auto; padding: 20px; background: #e7f0fd; border-radius: 10px; box-shadow: inset 1px 1px 8px #a1c0ff;">
+    <h2 style="color: #003366; font-weight: 700; margin-bottom: 20px;">FAQ</h2>
+    <div style="font-size: 1.1rem; line-height: 1.6; color: #004080;">
+      <p><strong>Where can I find reliable FujiFilm printer rentals in Singapore?</strong><br />
+      CPC Solution offers a wide range of reliable FujiFilm printers available for rent to meet various business needs, with plans typically ranging from S$90 to S$140.</p>
+      
+      <p><strong>Does CPC Solution provide copier machine services in Singapore?</strong><br />
+      Yes, CPC Solution is a leading provider of copier machine rentals and services across Singapore, offering comprehensive solutions for all business sizes.</p>
+
+      <p><strong>Can I rent a high-quality photo printer in Singapore?</strong><br />
+      We offer specialized photo printer rentals to ensure premium quality prints for personal or professional use, with plans available up to S$140.</p>
+
+      <p><strong>What is the price for a Fuji Xerox printer rental in Singapore?</strong><br />
+      The rental price for a Fuji Xerox printer generally falls between S$90 and S$140 depending on the model and rental duration. Contact CPC Solution for a detailed quote.</p>
+
+      <p><strong>How much does it cost to rent a copier in Singapore?</strong><br />
+      Copier rental costs start from a competitive price of S$90 per month, designed to fit different budget needs.</p>
+
+      <p><strong>Is it better to lease or buy a photocopier for my business?</strong><br />
+      Leasing a photocopier from CPC Solution is usually more cost-effective as it includes full maintenance and support, while avoiding a large upfront investment.</p>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://api.whatsapp.com/send/?phone=6589662687&text&app_absent=0" target="_blank" class="whatsapp-float" aria-label="WhatsApp Contact"
+    style="position:fixed;bottom:20px;right:20px;background:#05b33f;border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 5px rgba(7, 189, 31, 0.3);text-decoration:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="green" viewBox="0 0 24 24" width="28px" height="28px" aria-hidden="true"
+      focusable="false">
+      <path
+        d="M20.52 3.48A11.73 11.73 0 0012 0 11.75 11.75 0 00.48 12c0 2.15.56 4.14 1.6 5.93L0 24l6.4-2.09A11.75 11.75 0 0012 24a11.75 11.75 0 008.52-20.52zm-8.49 17.5a9.3 9.3 0 01-4.72-1.31l-.34-.2-3.8 1.24 1.28-3.7-.22-.38a9.37 9.37 0 01-1.45-5.49 9.3 9.3 0 1112.66 8.36 9.23 9.23 0 01-3.43.48zm5.23-7.03c-.29-.14-1.7-.84-1.96-.94s-.45-.14-.64.14-.74.94-.91 1.14-.33.21-.62.07a7.22 7.22 0 00-2.18-.64 8.35 8.35 0 00-1.55.94 6.84 6.84 0 00-2.53 3 6.15 6.15 0 001.98 2.56 7.15 7.15 0 002.75 1.77 8.2 8.2 0 002.53.21 7.83 7.83 0 004.66-2.36 7.91 7.91 0 002.43-4.17 7.35 7.35 0 00-1.68-2.67c-.36-.38-.68-.32-.96-.19z">
+      </path>
+    </svg>
+  </a>
+
+  <footer style="background-color: #003366; color: #cdd9f0; padding: 40px 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+      <div style="flex: 1 1 220px; min-width: 220px;">
+        <h3 style="color: #ffffff; font-weight: 700; margin-bottom: 15px;">About Us</h3>
+        <p style="font-size: 1rem; line-height: 1.6;">
+          We do not believe in making sales, we believe in cultivating lasting relationships. Which is why we deliver a comprehensive range of services, beyond just providing you with a simple copier or printer.
+        </p>
+      </div>
+
+      <div style="flex: 1 1 160px; min-width: 160px;">
+        <h3 style="color: #ffffff; font-weight: 700; margin-bottom: 15px;">Company</h3>
+        <nav style="display: flex; flex-direction: column; gap: 8px;">
+          <a href="https://www.copierpc.com.sg/" style="color: #cdd9f0; text-decoration: none;">Home</a>
+          <a href="https://www.copierpc.com.sg/about-us/" style="color: #cdd9f0; text-decoration: none;">About Us</a>
+          <a href="https://www.copierpc.com.sg/contact-us/" style="color: #cdd9f0; text-decoration: none;">Contact Us</a>
+          <a href="https://www.copierpc.com.sg/careers/" style="color: #cdd9f0; text-decoration: none;">Careers</a>
+        </nav>
+      </div>
+
+      <div style="flex: 1 1 180px; min-width: 180px;">
+        <h3 style="color: #ffffff; font-weight: 700; margin-bottom: 15px;">Products & Services</h3>
+        <nav style="display: flex; flex-direction: column; gap: 8px;">
+          <a href="https://www.copierpc.com.sg/copier/" style="color: #cdd9f0; text-decoration: none;">Copier</a>
+          <a href="https://www.copierpc.com.sg/it-products/" style="color: #cdd9f0; text-decoration: none;">IT Products</a>
+          <a href="https://www.copierpc.com.sg/copier-rental/" style="color: #cdd9f0; text-decoration: none;">Copier Rental</a>
+          <a href="https://www.copierpc.com.sg/blog/" style="color: #cdd9f0; text-decoration: none;">Blog</a>
+        </nav>
+      </div>
+
+      <div style="flex: 1 1 200px; min-width: 200px;">
+        <h3 style="color: #ffffff; font-weight: 700; margin-bottom: 15px;">Contact Us</h3>
+        <p><a href="tel:+6565279124" style="color: #cdd9f0; text-decoration: none;">+65 6527 9124</a></p>
+        <p><a href="https://api.whatsapp.com/send/?phone=6589662687&text&app_absent=0" style="color: #cdd9f0; text-decoration: none;">+65 8966 2687 (WhatsApp)</a></p>
+        <p><a href="mailto:info@copierpc.com.sg" style="color: #cdd9f0; text-decoration: none;">info@copierpc.com.sg</a></p>
+        <address style="font-style: normal;">110 Lor 23 Geylang, #05-07 Victory Centre, Singapore 388410</address>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: #aaccff;">
+      &copy; 2025 CPC Solution Pte Ltd. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function toggleDropdown(menuId, button) {
+      const allMenus = document.querySelectorAll('.dropdown-menu');
+      const targetMenu = document.getElementById(menuId);
+      
+      allMenus.forEach(menu => {
+        if (menu.id !== menuId) {
+          menu.style.display = 'none';
+        }
+      });
+      
+      const isVisible = targetMenu.style.display === 'block';
+      targetMenu.style.display = isVisible ? 'none' : 'block';
+      button.setAttribute('aria-expanded', !isVisible);
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('main-nav');
+      
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+          mainNav.classList.toggle('is-open');
+        });
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.menu-toggle')) {
+          const dropdowns = document.querySelectorAll('.dropdown-menu');
+          dropdowns.forEach(dropdown => {
+            if (dropdown.style.display === 'block') {
+              dropdown.style.display = 'none';
+            }
+          });
+          const mainNav = document.getElementById('main-nav');
+          if (mainNav && mainNav.classList.contains('is-open')) {
+            if (!mainNav.contains(event.target)) {
+              mainNav.classList.remove('is-open');
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

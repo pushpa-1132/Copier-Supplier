@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - CPC Solution</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f6fc;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    nav a,
+    .dropdown-toggle {
+      color: #cdd9f0;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+    nav a:hover,
+    nav a:focus,
+    .dropdown-toggle:hover,
+    .dropdown-toggle:focus {
+      background-color: #3366cc;
+      color: #fff;
+      outline: none;
+    }
+    .dropdown-container {
+      position: relative;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      z-index: 20;
+      min-width: 180px;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+    .dropdown-menu a {
+      color: #004080;
+      font-weight: bold;
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      font-size: 1rem;
+    }
+    .dropdown-menu a:hover {
+      background-color: #e6f0ff;
+    }
+    /* Mobile styles */
+    .menu-toggle {
+        display: none; /* Hidden by default on desktop */
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 5px;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .menu-toggle {
+        display: block; /* Show on mobile */
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+      nav.is-open {
+        display: flex; /* Show when active */
+      }
+      nav a, .dropdown-toggle, .dropdown-container {
+        width: 100%;
+        text-align: left;
+        box-sizing: border-box;
+      }
+      .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      .dropdown-menu a {
+        padding-left: 30px;
+        font-size: 1rem;
+      }
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      color: #222;
+      letter-spacing: 0.02em;
+      line-height: 1.7;
+    }
+    main h2 {
+      color: #00509e;
+      font-weight: 700;
+      margin-bottom: 25px;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
+    }
+    main p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+    }
+    main ul {
+      margin-left: 30px;
+      font-size: 1.1rem;
+      color: #004080;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CPC Solution</h1>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav id="main-nav">
+      <a href="https://www.copierpc.com.sg/">Home</a>
+      <a href="about-us.html" aria-current="page">About Us</a>
+      <a href="https://www.copierpc.com.sg/blog/">Blog</a>
+      <a href="https://www.copierpc.com.sg/contact-us/">Contact</a>
+
+      <div class="dropdown-container">
+        <button class="dropdown-toggle" onclick="toggleDropdown('services-menu', this)">Services &#9662;</button>
+        <div id="services-menu" class="dropdown-menu">
+          <a href="https://www.copierpc.com.sg/copier-rental/">Copier Rental</a>
+          <a href="https://www.copierpc.com.sg/seo-package/">SEO</a>
+          <a href="https://www.copierpc.com.sg/monday-com-integration/">Work OS</a>
+          <a href="https://www.copierpc.com.sg/ai-chatbots/">AI Automation</a>
+        </div>
+      </div>
+
+      <div class="dropdown-container">
+        <button class="dropdown-toggle" onclick="toggleDropdown('product-menu', this)">Product &#9662;</button>
+        <div id="product-menu" class="dropdown-menu">
+          <a href="https://www.copierpc.com.sg/copier/">Copier</a>
+          <a href="https://www.copierpc.com.sg/it-products/">IT Products</a>
+          <a href="https://www.copierpc.com.sg/drivers/">Drivers</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About CPC Solution</h2>
+    <p>CPC Solution was founded with the vision to deliver unparalleled office equipment solutions across Singapore. Our mission is to empower businesses of all sizes with dependable copier rentals, sales, and maintenance services that streamline operations and boost productivity.</p>
+    <p>With over 25 years of industry experience, we pride ourselves on personalized customer service, expert knowledge, and a commitment to lasting relationships rather than mere transactions.</p>
+    <p>Our core values include:</p>
+    <ul>
+      <li><strong>Customer Focus:</strong> Tailoring solutions that meet unique business needs.</li>
+      <li><strong>Quality:</strong> Providing equipment from trusted brands including FujiFilm, Canon, Epson, and more.</li>
+      <li><strong>Reliability:</strong> Prompt service and maintenance support with industry-leading response times.</li>
+      <li><strong>Integrity:</strong> Transparent pricing and ethical business practices.</li>
+    </ul>
+    <p>At CPC Solution, we believe when your business thrives, so do we. We offer flexible rental plans, expert technical support, and environmental responsibility through secure equipment disposal and relocation services.</p>
+    <p>Located at 110 Lor 23 Geylang, #05-07 Victory Centre, Singapore 388410, we are your trusted partner for all your office copier and IT product needs.</p>
+    <p>Contact us today to learn how we can help your business operate smarter and more efficiently.</p>
+  </main>
+
+  <script>
+    function toggleDropdown(menuId, button) {
+      const allMenus = document.querySelectorAll('.dropdown-menu');
+      const targetMenu = document.getElementById(menuId);
+      
+      allMenus.forEach(menu => {
+        if (menu.id !== menuId) {
+          menu.style.display = 'none';
+        }
+      });
+      
+      const isVisible = targetMenu.style.display === 'block';
+      targetMenu.style.display = isVisible ? 'none' : 'block';
+      button.setAttribute('aria-expanded', !isVisible);
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('main-nav');
+      
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+          mainNav.classList.toggle('is-open');
+        });
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.menu-toggle')) {
+          const dropdowns = document.querySelectorAll('.dropdown-menu');
+          dropdowns.forEach(dropdown => {
+            if (dropdown.style.display === 'block') {
+              dropdown.style.display = 'none';
+            }
+          });
+          const mainNav = document.getElementById('main-nav');
+          if (mainNav && mainNav.classList.contains('is-open')) {
+            // Keep the main nav open if clicking inside it
+            if (!mainNav.contains(event.target)) {
+              mainNav.classList.remove('is-open');
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
